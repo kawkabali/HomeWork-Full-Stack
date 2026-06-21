@@ -1,0 +1,344 @@
+/* --- إعدادات وتصفير التنسيقات العامة للموقع --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /* تجعل المتصفح ينتقل بنعومة وسلاسة عند الضغط على أزرار القائمة */
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* تنسيق العناوين الأساسية لكل قسم */
+.section-title {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+/* --- الهيدر وشريط التنقل العلوي (Navbar) --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 10%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+/* جعل اسم اللوجو KAWKAB ALI باللون الأحمر تماماً كما طلبتِ */
+.navbar .logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    color: #cc0000; /* اللون الأحمر المخصص للاسم في الهيدر */
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #555555;
+    margin-left: 1.8rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.navbar nav a:hover {
+    color: #3b71ca; /* تلوين الروابط بالأزرق عند مرور الماوس */
+}
+
+/* --- الواجهة العريضة (Hero Section) --- */
+.hero {
+    background: linear-gradient(rgba(10, 24, 48, 0.85), rgba(10, 24, 48, 0.92)), 
+                url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+/* تعديل جملة الترحيب لتصبح باللون الأزرق المضيء */
+.hero-content .greeting {
+    color: #3b71ca; /* اللون الأزرق المطلوب للترحيب */
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+/* تعديل العنوان الرئيسي ليصبح باللون الأبيض الصافي */
+.hero-content h1 {
+    font-size: 3.2rem;
+    margin-bottom: 0.6rem;
+    font-weight: 700;
+    color: #ffffff; /* اللون الأبيض المطلق للعنوان */
+    letter-spacing: 0.5px;
+}
+
+.hero-content .tagline {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+/* زر عرض الأعمال الدائري الأزرق القياسي */
+.btn-primary {
+    background-color: #3b71ca;
+    color: #ffffff;
+    border: none;
+    padding: 0.7rem 1.8rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 25px; /* زر دائري الأطراف بالكامل */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2854a1;
+}
+
+.hero-content .social-icons {
+    margin-top: 1.8rem;
+    display: flex;
+    gap: 1.2rem;
+}
+
+.hero-content .social-icons a {
+    color: #ffffff;
+    font-size: 1rem;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.hero-content .social-icons a:hover {
+    opacity: 1;
+}
+
+/* --- قسم الخدمات الفردية (Services) --- */
+.services {
+    padding: 5rem 10%;
+    background-color: #ffffff;
+}
+
+.services .section-title {
+    color: #3b71ca;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    flex: 1;
+    min-width: 260px;
+    background: #ffffff;
+    padding: 2.5rem 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* ظلال ناعمة ومضيئة */
+    border: 1px solid #f6f6f6;
+}
+
+.service-card .card-icon {
+    font-size: 2.5rem;
+    color: #3b71ca;
+    margin-bottom: 1.2rem;
+}
+
+.service-card h3 {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    color: #3b71ca;
+}
+
+.service-card p {
+    color: #666666;
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+
+/* --- قسم استعراض المشاريع (Projects الشبكة المتكاملة 2x2) --- */
+.projects {
+    background-color: #031434; /* اللون الكحلي الداكن المأخوذ مباشرة من صور الواجب */
+    padding: 5rem 10%;
+}
+
+.projects .section-title {
+    color: #ffffff;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* إجبار عرض كرتين متجاورين في كل صف لتطابق الصورة */
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.project-img-container {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.project-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* لملء المساحة بالصور دون تشويه الأبعاد */
+}
+
+.project-info {
+    padding: 1rem 1.2rem;
+    background-color: #ffffff;
+}
+
+.project-subtitle {
+    font-size: 0.7rem;
+    color: #888888; /* الخط الرمادي الصغير المساعد فوق العنوان */
+    margin-bottom: 0.6rem;
+}
+
+.project-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #111111;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: none;
+    color: #3b71ca;
+    font-size: 0.75rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.btn-secondary:hover {
+    color: #1a448a;
+}
+
+/* --- قسم معلومات وبيانات الاتصال (Contact Section) --- */
+.contact {
+    padding: 5rem 10%;
+    background-color: #ffffff;
+}
+
+.contact .section-title {
+    color: #3b71ca;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    background: #ffffff;
+    padding: 1.8rem 3.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* الخلفية البيضاء النقية مع الظلال المفردة لكل كرت */
+    border: 1px solid #f6f6f6;
+    min-width: 240px;
+}
+
+.contact-card i {
+    font-size: 2rem;
+    color: #3b71ca;
+    margin-bottom: 0.8rem;
+}
+
+.contact-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+    color: #333333;
+}
+
+.contact-card p {
+    color: #666666;
+    font-size: 0.85rem;
+}
+
+/* --- شريط الفوتر النهائي للموقع (Footer) --- */
+footer {
+    background-color: #020b1d; /* اللون الأسود الداكن جداً */
+    color: #ffffff;
+    padding: 1.2rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    border-top: 1px solid #061735;
+}
+
+footer .footer-name {
+    color: #3b71ca;
+}
+
+footer .footer-socials {
+    display: flex;
+    gap: 1.2rem;
+}
+
+footer .footer-socials a {
+    color: #ffffff;
+    opacity: 0.6;
+    font-size: 0.85rem;
+    transition: opacity 0.2s ease;
+}
+
+footer .footer-socials a:hover {
+    opacity: 1;
+}
+
+/* --- التجاوب الذكي مع شاشات الجوال والهواتف المحمولة --- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    .navbar nav a {
+        margin: 0 0.8rem;
+    }
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr; /* تترتب تلقائياً كعمود فردي عند فتح الموقع من الهاتف لتفادي التداخل */
+    }
+    .services-container, .contact-container {
+        flex-direction: column;
+    }
+    footer {
+        flex-direction: column;
+        gap: 0.8rem;
+        text-align: center;
+    }
+}

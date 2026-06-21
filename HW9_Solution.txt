@@ -1,0 +1,37 @@
+import React from 'react';
+
+
+function LoginButton({ isLoggedIn }) {
+  return (
+    <div>
+      {isLoggedIn ? (
+        <button style={{ padding: '5px 10px', cursor: 'pointer' }}>Logout</button>
+      ) : (
+        <button style={{ padding: '5px 10px', cursor: 'pointer' }}>Login</button>
+      )}
+    </div>
+  );
+}
+
+
+function App() {
+  return (
+    <div style={{ padding: '20px', fontFamily: 'serif' }}>
+      
+      {}
+      <div style={{ border: '1px solid black', padding: '20px', marginBottom: '20px', width: '300px' }}>
+        <h2 style={{ marginTop: 0 }}>Welcome to the website</h2>
+        <LoginButton isLoggedIn={true} />
+      </div>
+      
+      {}
+      <div style={{ border: '1px solid black', padding: '20px', width: '300px' }}>
+        <h2 style={{ marginTop: 0 }}>Welcome to the website</h2>
+        <LoginButton isLoggedIn={false} />
+      </div>
+
+    </div>
+  );
+}
+
+export default App;

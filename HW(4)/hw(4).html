@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+        }
+
+        .task-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 30px;
+            background-color: #fff;
+            max-width: 600px;
+        }
+
+      
+        .custom-link {
+            display: inline-block;
+            padding: 10px 25px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #333;
+            border: 2px solid #2e7d32; 
+            background-color: white;
+            transition: all 0.3s ease;
+        }
+
+        .custom-link:hover {
+            background-color: #2e7d32;
+            color: white;
+        }
+
+
+        .list-container {
+            background-color: #ffff00; 
+            padding: 10px 20px;
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .list-container ul {
+            margin: 0;
+            padding-left: 20px;
+            list-style-type: square;
+            color: #ff5722; 
+        }
+
+        .list-container ul li {
+            color: #000; 
+            margin-bottom: 5px;
+        }
+
+       
+        .z-index-container {
+            position: relative;
+            padding: 20px;
+            border: 1px solid #777;
+            height: 120px;
+            overflow: hidden;
+        }
+
+        .background-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80px;
+            height: 100%;
+            background-color: #ffca28; 
+           
+            background-image: radial-gradient(#b78a00 15%, transparent 16%);
+            background-size: 4px 4px;
+            z-index: -1; 
+        }
+
+        .z-index-container h2 {
+            margin: 0 0 10px 0;
+            font-size: 24px;
+        }
+
+        .z-index-container p {
+            margin: 0;
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <div class="task-container">
+        <a href="#" class="custom-link">This is a link</a>
+    </div>
+
+
+    <div class="task-container" style="border: 1px solid #000; padding: 40px 10px;">
+        <div class="list-container">
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+            </ul>
+        </div>
+    </div>
+
+  
+    <div class="z-index-container">
+        <div class="background-pattern"></div>
+        
+        <h2>This is a heading</h2>
+        <p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+    </div>
+
+</body>
+</html>

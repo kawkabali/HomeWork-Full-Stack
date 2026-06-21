@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Example</title>
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+   
+    .main-container {
+      max-width: 1140px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border: 1px solid #333333;
+      padding-bottom: 40px;
+    }
+    .pricing-header {
+      max-width: 700px;
+    }
+   
+    .card-header {
+      background-color: #f7f7f7 !important;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .card {
+      border: 1px solid #b0c4de !important;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-container shadow-sm">
+    
+    <!-- Navbar / Header -->
+    <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom">
+      <p class="h5 my-0 me-md-auto fw-normal text-secondary">Company name</p>
+      <nav class="my-2 my-md-0 me-md-3">
+        <a class="p-2 text-secondary text-decoration-none small" href="#">Features</a>
+        <a class="p-2 text-secondary text-decoration-none small" href="#">Enterprise</a>
+        <a class="p-2 text-secondary text-decoration-none small" href="#">Support</a>
+        <a class="p-2 text-secondary text-decoration-none small" href="#">Pricing</a>
+      </nav>
+      <a class="btn btn-outline-primary btn-sm px-3" href="#">Sign up</a>
+    </header>
+
+  
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal text-dark" style="font-family: sans-serif;">Pricing</h1>
+      <p class="lead text-muted fs-6 px-lg-5">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
+    </div>
+
+   
+    <div class="container px-4">
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center g-4">
+        
+     
+        <div class="col">
+          <div class="card mb-4 rounded-1">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal text-secondary fs-5">Free</h4>
+            </div>
+            <div class="card-body py-4">
+              <h1 class="card-title pricing-card-title text-dark fw-normal">$0 <span class="text-muted fw-light fs-4">/ mo</span></h1>
+              <ul class="list-unstyled mt-3 mb-4 text-secondary small lh-lg">
+                <li>10 users included</li>
+                <li>2 GB of storage</li>
+                <li>Email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-outline-primary py-2 rounded-1">Sign up for free</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pro Card -->
+        <div class="col">
+          <div class="card mb-4 rounded-1">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal text-secondary fs-5">Pro</h4>
+            </div>
+            <div class="card-body py-4">
+              <h1 class="card-title pricing-card-title text-dark fw-normal">$15 <span class="text-muted fw-light fs-4">/ mo</span></h1>
+              <ul class="list-unstyled mt-3 mb-4 text-secondary small lh-lg">
+                <li>20 users included</li>
+                <li>10 GB of storage</li>
+                <li>Priority email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-primary py-2 rounded-1 fw-bold">Get started</button>
+            </div>
+          </div>
+        </div>
+       
+        <div class="col">
+          <div class="card mb-4 rounded-1">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal text-secondary fs-5">Enterprise</h4>
+            </div>
+            <div class="card-body py-4">
+              <h1 class="card-title pricing-card-title text-dark fw-normal">$29 <span class="text-muted fw-light fs-4">/ mo</span></h1>
+              <ul class="list-unstyled mt-3 mb-4 text-secondary small lh-lg">
+                <li>30 users included</li>
+                <li>15 GB of storage</li>
+                <li>Phone and email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-primary py-2 rounded-1 fw-bold">Contact us</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+          <div class="col-12 col-md">
+            <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
+          </div>
+          <div class="col-4 col-md">
+            <h6 class="text-dark fw-bold">Features</h6>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-info text-decoration-none small" href="#">Cool stuff</a></li>
+              <li><a class="link-secondary text-decoration-none small" href="#">Random feature</a></li>
+              <li><a class="link-secondary text-decoration-none small" href="#">Team feature</a></li>
+              <li><a class="link-secondary text-decoration-none small" href="#">Stuff for developers</a></li>
+              <li><a class="link-secondary text-decoration-none small" href="#">Another one</a></li>
+              <li><a class="link-secondary text-decoration-none small" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-4 col-md">
+            <h6 class="text-dark fw-bold">Resources</h6>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary text-decoration-none small" href="#">Resource</a></li>
+              <li><a class="link-secondary text-decoration-none small" href="#">Resource name</a></li>
+              <li><a class="link-secondary text-decoration-none small" href="#">Another resource</a></li>
+              <li><a class="link-secondary text-decoration-none small" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-4 col-md">
+            <h6 class="text-dark fw-bold">About</h6>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary text-decoration-none small" href="#">Team</a></li>
+              <li><a class="link-secondary text-decoration-none small" href="#">Locations</a></li>
+              <li><a class="link-secondary text-decoration-none small" href="#">Privacy</a></li>
+              <li><a class="link-secondary text-decoration-none small" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+  </div>
+
+</body>
+</html>
